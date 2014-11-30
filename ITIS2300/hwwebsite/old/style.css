@@ -1,0 +1,148 @@
+head, body {
+	height:100%;
+}
+body {
+	background: url(images/bg.png) repeat;
+}
+#centered {
+	margin: 0 auto;
+	width: 950px;
+	height: 95%;
+	padding: 5px;
+}
+#content {
+	color: #e5e3e3;
+	background-color: rgba(0, 0, 0, 0.73);
+	height: 500px;
+	float:left;
+	width: 80%;
+	overflow-y:scroll;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+/*No idea what I'm doing...CSS ALL THE THINGS!*/
+#content img {
+	padding:10px;
+	padding-bottom:0px;
+}
+#content h2 {
+	padding-left:10px;
+}
+#content iframe {
+	padding-left:10px;
+}
+#content p {
+	padding-left: 10px;
+}
+#footer {
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.73);
+	padding-top:10px;
+	padding-bottom:10px;
+}
+#header {
+	text-align:center;
+	background-color: rgba(0, 0, 0, 0.73);
+	padding-bottom: 1px;
+}
+#header h1 {
+	color: #00703C;
+	font-size: 3em;
+	padding: 24px 24px 0px 24px;
+	margin: 20px;
+	margin-bottom:0px;
+	font-family: Papyrus;
+}
+#nav ul {
+	list-style-type:none;
+}
+#nav li {
+	display:inline;
+	width: 100px;
+	font-family: sans-serif;
+	font-size: 1.25em;
+	color: grey;
+}
+#nav li:before {
+	content: " || ";
+}
+#nav li:first-child:before {
+	content: none;
+}
+#orglinks ul {
+	list-style-type: none;
+}
+#orglinks li {
+	display: inline;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+#sidebar {
+	height: 520px;
+	background-color: rgba(0, 0, 0, 0.73);
+	float:right;
+	width: 20%;
+}
+#eventticker {
+	border: 1px solid #AAA;
+	margin:5%;
+}
+#eventticker ul {
+	list-style:none;
+	padding:5px;
+	text-align:center;
+}
+#eventticker li {
+	font-size:  10pt;
+	margin: 0;
+	color: #AAA;
+}
+#calendar {
+	background-color: rgba(0, 0, 0, 0.73);
+	text-align: center;
+	padding-top: 20px;
+}
+.line {
+	clear:both;
+}
+
+a {
+	color:#AAA;
+}
+
+
+/*Form CSS stuff*/
+label, .spacer {
+	display:inline-block;
+	width:100px;
+	margin-right:5px;
+	text-align:right;
+	color: #AAA;
+	
+}
+.row {
+	margin-top:5px;
+	margin-bottom:5px;
+}
+#joinrad {
+	color: #AAA;
+}
+#submit {
+	display: block;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    margin: 10px 250px;
+    color: #AAA;
+    background-color: #555;
+    border: 0 none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#content img.gridImg {
+	padding: 2px 2px;
+	padding-right: 0px;
+	padding-left: 10px;
+}

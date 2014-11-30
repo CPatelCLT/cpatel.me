@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+		<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Project Control Structure</title>
+		<script type="text/javascript">
+			function userMonth() {
+				//selIndex gets the selected item in the "select" box
+				var selIndex = document.getElementById("month").selectedIndex;
+				//selValue gets the actual text from the selected option
+				var selValue = document.getElementsByTagName("option")[selIndex].value;
+				//res is an empty string to be populated in the switch statement
+				var res;
+				switch (selValue) {  //switch statement requires the value it needs to evaluate
+					case "Jan":      //case is how you break up the incoming value
+						res = "Happy new year";		//setting the res variable
+						break;						//break exits the switch and continues the javascript
+					case "Feb":
+						res = "Almost spring!";
+						break;
+					case "Mar":
+						res = "So much rain...";
+						break;
+					case "Apr":
+						res = "Brace yourself, allergies incoming";
+						break;
+					case "May":
+						res = "Ready for your break?";
+						break;
+					case "Jun":
+						res = "Happy vacation";
+						break;
+					case "Jul":
+						res = "Welcome back";
+						break;
+					case "Aug":
+						res = "Back to school";
+						break;
+					case "Sep":
+						res = "Brace yourself, cold incoming";
+						break;
+					case "Oct":
+						res = "Halloween";
+						break;
+					case "Nov":
+						res = "Winter is coming";
+						break;
+					case "Dec":
+						res = "Stay warm!";
+						break;
+						
+					//you can add a "default" case to catch everything else...similar to an "else" in an if/else statement
+				}
+				document.getElementById("returned").innerHTML = res;   //sets the paragraph tag to the res variable
+			}
+		</script>
+		</head>
+
+		<body>
+What month is it?
+<select id="month">
+          <option value="Jan">Jan</option>
+          <option value="Feb">Feb</option>
+          <option value="Mar">Mar</option>
+          <option value="Apr">Apr</option>
+          <option value="May">May</option>
+          <option value="Jun">Jun</option>
+          <option value="Jul">Jul</option>
+          <option value="Aug">Aug</option>
+          <option value="Sep">Sep</option>
+          <option value="Oct">Oct</option>
+          <option value="Nov">Nov</option>
+          <option value="Dec">Dec</option>
+        </select>
+<button onclick="userMonth()"> Select </button>
+<br>
+<p id="returned"></p>
+</body>
+</html>

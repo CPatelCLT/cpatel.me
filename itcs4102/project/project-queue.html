@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>JS Queue</title>
+      <meta name="description" content="  charset=UTF-8">
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>    
+      
+    <script>   
+         var queue = [2,5,10,12,17,18];
+         
+         document.getElementById("demo").innerHTML = queue;
+         
+         function myFunction() {
+             queue.pop();
+
+             document.getElementById("demo").innerHTML = queue;
+         } 
+         
+      </script>
+   </head>
+   <body>
+
+      <p>Click the button to remove the last element from the array.</p>
+      
+    <button onclick="myFunction()">Try it</button>
+      
+    <p id="demo"></p>
+  
+ </body>
+</html>

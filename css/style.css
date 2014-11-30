@@ -1,0 +1,59 @@
+#programmer {
+/* 	background-color: #443333; */
+	vertical-align: middle;
+	margin: 0px;
+	padding-top: 25px;
+	font-size: 3em;
+	color: 	#f0f0f0;
+}
+#photographer {
+/* 	background-color: #bb5555; */
+	vertical-align: middle;
+	margin: 0px;
+		padding-top: 25px;
+		font-size: 3em;
+		
+}
+#archer {
+/* 	background-color: #cccc66; */
+	vertical-align: middle;
+	margin: 0px;
+		padding-top: 25px;
+		font-size: 3em;
+}
+html, body {
+	height:100%;
+}
+
+.container-fluid {
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	padding-right: 0px;
+    padding-left: 0px;
+}
+.centering {
+        float: none;
+        margin: 0 auto;
+}
+.row-fluid {
+	height: 100%;
+}
+.col-md-4 {
+	min-height: 100%;
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+}
+.programmer {
+	background-image: url("../images/bg2.png")
+}
+.photographer {
+	background-image: url("../images/bg3.png");
+}
+.archer {
+	background-image: url("../images/bg1.png");
+}
+.center-block {
+	padding-top: 45%;
+}

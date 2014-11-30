@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>3 of a crime</title>
+<script src="3ofacrime1.js"></script>
+<style>
+body {
+	background-color:lightgray
+}
+h1 {
+	color:blue
+}
+p {
+	color:green
+}
+h2 {
+	font-size:14px;
+}
+#content {
+	margin: 0 auto;
+	width: 500px;
+}
+</style>
+</head>
+
+<body onload="initDisplay();">
+<div id="content">
+  <h1 id="suspects"></h1>
+  <h2 id="choices"></h2>
+  <input type="radio" id="r1" name="currPlayer" value="r1"/>
+  <p id= "p1" style="display:inline-block">Player 1: </p>
+  <br/>
+  <select name="p11" id="p11">
+    <option value="a">a</option>
+    <option value="b">b</option>
+    <option value="c">c</option>
+    <option value="d">d</option>
+    <option value="e">e</option>
+    <option value="f">f</option>
+    <option value="g">g</option>
+  </select>
+  <select name="p12" id="p12">
+    <option value="a">a</option>
+    <option value="b">b</option>
+    <option value="c">c</option>
+    <option value="d">d</option>
+    <option value="e">e</option>
+    <option value="f">f</option>
+    <option value="g">g</option>
+  </select>
+  <select name="p13" id="p13">
+    <option value="a">a</option>
+    <option value="b">b</option>
+    <option value="c">c</option>
+    <option value="d">d</option>
+    <option value="e">e</option>
+    <option value="f">f</option>
+    <option value="g">g</option>
+  </select>
+  <button name="p1sub"  id="p1sub" onclick="checkAnswer('p1')">Submit</button>
+  or
+  <button name="p1skip" id="p1skip" onclick="skipPlayer('p1');">Skip</button>
+  <br/>
+  <input type="radio" id="r2" name="currPlayer" value="r2"/>
+  <p id = "p2" style="display:inline-block">Player 2: </p>
+  <br/>
+  <select name="p21" id="p21">
+    <option value="a">a</option>
+    <option value="b">b</option>
+    <option value="c">c</option>
+    <option value="d">d</option>
+    <option value="e">e</option>
+    <option value="f">f</option>
+    <option value="g">g</option>
+  </select>
+  <select name="p22" id="p22">
+    <option value="a">a</option>
+    <option value="b">b</option>
+    <option value="c">c</option>
+    <option value="d">d</option>
+    <option value="e">e</option>
+    <option value="f">f</option>
+    <option value="g">g</option>
+  </select>
+  <select name="p23" id="p23">
+    <option value="a">a</option>
+    <option value="b">b</option>
+    <option value="c">c</option>
+    <option value="d">d</option>
+    <option value="e">e</option>
+    <option value="f">f</option>
+    <option value="g">g</option>
+  </select>
+  <button name="p2sub" id="p2sub" onclick="checkAnswer('p2')">Submit</button>
+  or
+  <button name="p2skip" id="p2skip" onclick="skipPlayer('p2')">Skip</button>
+  <br/>
+  <input type="radio" id="r3" name="currPlayer" value="r3"/>
+  <p id = "p3" style="display:inline-block">Player 3: </p>
+  <br/>
+  <select name="p31" id="p31">
+    <option value="a">a</option>
+    <option value="b">b</option>
+    <option value="c">c</option>
+    <option value="d">d</option>
+    <option value="e">e</option>
+    <option value="f">f</option>
+    <option value="g">g</option>
+  </select>
+  <select name="p32" id="p32">
+    <option value="a">a</option>
+    <option value="b">b</option>
+    <option value="c">c</option>
+    <option value="d">d</option>
+    <option value="e">e</option>
+    <option value="f">f</option>
+    <option value="g">g</option>
+  </select>
+  <select name="p33" id="p33">
+    <option value="a">a</option>
+    <option value="b">b</option>
+    <option value="c">c</option>
+    <option value="d">d</option>
+    <option value="e">e</option>
+    <option value="f">f</option>
+    <option value="g">g</option>
+  </select>
+  <button name="p3sub"  id="p3sub" onclick="checkAnswer('p3')">Submit</button>
+  or
+  <button name="p3skip" id="p3skip" onclick="skipPlayer('p3')">Skip</button>
+</div>
+</body>
+</html>

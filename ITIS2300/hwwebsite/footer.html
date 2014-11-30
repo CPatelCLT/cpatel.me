@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+<div id="orglinks">
+      <ul>
+        <li style="height:150px;"><a style="display:inline-block" href="https://www.facebook.com/groups/unccarchery/"><figure><img src="images/footer_facebook.png" alt="Facebook" name="fb" id="fb"><figcaption id="fbcap">Facebook</figcaption></figure></a></li>
+        <li style="height:150px;"><a style="display:inline-block" href="mailto:cpatel36@uncc.edu"><figure><img src="images/footer_email.png" alt="Email" id="email"><figcaption id="emailcap">Email</figcaption></figure></a></li>
+        <li style="height:150px;"><a style="display:inline-block" href="https://orgsync.com/66824/chapter"><figure><img src="images/footer_orgsync.png" alt="Orgsync" id="os"><figcaption id="oscap">OrgSync</figcaption></figure></a></li>
+      </ul>
+    </div>
+    
+    <script>
+    $(document).ready(function(e) {
+        $("#fbcap").toggle();
+		$("#emailcap").toggle();
+		$("#oscap").toggle();
+    });
+	$("#fb").hover(function(e) {
+        $("#fbcap").toggle();
+    });
+    </script>
+</body>
+</html>
