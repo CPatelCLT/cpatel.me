@@ -12,17 +12,7 @@
  <script>
 		  $(document).ready(function(){
 		 	 $(".fancybox").fancybox({openEffect:'elastic', closeEffect:'elastic'});
-			 
-			 //For some reason this isnt working as expected, it looks like the "elevateZoom" is overriding something causing it to glitch out a little. 
-			 //You can see the zoom sort of working for a milisecond when you hover
-			  $(".gridImg").hover(function() {
-				 $(this).height(260);
-			 },
-			 function() {
-				  $(this).height(180);
-			 });
 		 	 $(".gridImg").elevateZoom({easing: true,zoomWindowWidth:600, zoomWindowHeight:600});
-			
 		});
    		
 	  </script>
@@ -48,24 +38,10 @@
 		<a class="fancybox" rel="gallery" href="images/gallery/02.jpg"><img class="gridImg" height="180px" src="images/gallery/02.jpg" alt="" data-zoom-image="images/gallery/02.jpg"></a>
 		<a class="fancybox" rel="gallery" href="images/gallery/03.jpg"><img class="gridImg" height="180px" src="images/gallery/03.jpg" alt="" data-zoom-image="images/gallery/03.jpg"></a>
 		<a class="fancybox" rel="gallery" href="images/gallery/04.jpg"><img class="gridImg" height="180px" src="images/gallery/04.jpg" alt="" data-zoom-image="images/gallery/04.jpg"></a>
+          <a class="fancybox" rel="gallery" href="images/gallery/07.jpg"><img class="gridImg" height="180px" src="images/gallery/07.jpg" alt="" data-zoom-image="images/gallery/07.jpg"></a>
 		<a class="fancybox" rel="gallery" href="images/gallery/05.jpg"><img class="gridImg" height="180px" src="images/gallery/05.jpg" alt="" data-zoom-image="images/gallery/05.jpg"></a>
 		<a class="fancybox" rel="gallery" href="images/gallery/06.jpg"><img class="gridImg" height="180px" src="images/gallery/06.jpg" alt="" data-zoom-image="images/gallery/06.jpg"></a>
-		<a class="fancybox" rel="gallery" href="images/gallery/07.jpg"><img class="gridImg" height="180px" src="images/gallery/07.jpg" alt="" data-zoom-image="images/gallery/07.jpg"></a>
-		 <a class="fancybox" rel="gallery" href="images/gallery/08.jpg"><img class="gridImg" height="180px" src="images/gallery/08.jpg" alt="" data-zoom-image="images/gallery/08.jpg"></a>
-		 <a class="fancybox" rel="gallery" href="images/gallery/09.jpg"><img class="gridImg" height="180px" src="images/gallery/09.jpg" alt="" data-zoom-image="images/gallery/09.jpg"></a>
-		 <a class="fancybox" rel="gallery" href="images/gallery/10.jpg"><img class="gridImg" height="180px" src="images/gallery/10.jpg" alt="" data-zoom-image="images/gallery/10.jpg"></a>
-		 <a class="fancybox" rel="gallery" href="images/gallery/11.jpg"><img class="gridImg" height="180px" src="images/gallery/11.jpg" alt="" data-zoom-image="images/gallery/11.jpg"></a>
-		 <a class="fancybox" rel="gallery" href="images/gallery/12.jpg"><img class="gridImg" height="180px" src="images/gallery/12.jpg" alt="" data-zoom-image="images/gallery/12.jpg"></a>
-		 <a class="fancybox" rel="gallery" href="images/gallery/13.jpg"><img class="gridImg" height="180px" src="images/gallery/13.jpg" alt="" data-zoom-image="images/gallery/13.jpg"></a>
-		 <a class="fancybox" rel="gallery" href="images/gallery/14.jpg"><img class="gridImg" height="180px" src="images/gallery/14.jpg" alt="" data-zoom-image="images/gallery/14.jpg"></a>
-		 <a class="fancybox" rel="gallery" href="images/gallery/15.jpg"><img class="gridImg" height="180px" src="images/gallery/15.jpg" alt="" data-zoom-image="images/gallery/15.jpg"></a>
-		 <a class="fancybox" rel="gallery" href="images/gallery/16.jpg"><img class="gridImg" height="180px" src="images/gallery/16.jpg" alt="" data-zoom-image="images/gallery/16.jpg"></a>
-		 <a class="fancybox" rel="gallery" href="images/gallery/17.jpg"><img class="gridImg" height="180px" src="images/gallery/17.jpg" alt="" data-zoom-image="images/gallery/17.jpg"></a>
-		 <a class="fancybox" rel="gallery" href="images/gallery/18.jpg"><img class="gridImg" height="180px" src="images/gallery/18.jpg" alt="" data-zoom-image="images/gallery/18.jpg"></a>
-		 <a class="fancybox" rel="gallery" href="images/gallery/19.jpg"><img class="gridImg" height="180px" src="images/gallery/19.jpg" alt="" data-zoom-image="images/gallery/19.jpg"></a>
-		 <a class="fancybox" rel="gallery" href="images/gallery/20.jpg"><img class="gridImg" height="180px" src="images/gallery/20.jpg" alt="" data-zoom-image="images/gallery/20.jpg"></a>
-		 <a class="fancybox" rel="gallery" href="images/gallery/21.jpg"><img class="gridImg" height="180px" src="images/gallery/21.jpg" alt="" data-zoom-image="images/gallery/21.jpg"></a>
-		 <a class="fancybox" rel="gallery" href="images/gallery/22.jpg"><img class="gridImg" height="180px" src="images/gallery/22.jpg" alt="" data-zoom-image="images/gallery/22.jpg"></a>
+		
 	  </div>
   </div>
   <div id="sidebar">
@@ -80,14 +56,8 @@
   <div id="fixdamnyou" style="clear:both;"></div>
       <hr class="line">
   <div id="footer">
-    <div id="orglinks">
-      <ul>
-        <li><a href="https://www.facebook.com/groups/unccarchery/"><img src="images/footer_facebook.png" alt="Facebook"></a></li>
-        <li><a href="mailto:cpatel36@uncc.edu"><img src="images/footer_email.png" alt="Email"></a></li>
-        <li><a href="https://orgsync.com/66824/chapter"><img src="images/footer_orgsync.png" alt="Orgsync"></a></li>
-      </ul>
-    </div>
-  </div>
+  <script>$("#footer").load("footer.html");</script>
+</div>
 </div>
 </body>
 </html>
